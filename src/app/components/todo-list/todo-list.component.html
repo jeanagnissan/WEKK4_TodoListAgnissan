@@ -1,0 +1,11 @@
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <tr  *ngFor="let todo of todoList">
+    <app-todo-item [todo]="todo"></app-todo-item>
+  </tr>
+
+</table>

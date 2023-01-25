@@ -1,0 +1,4 @@
+
+<app-todo-form (todoList)="getTodoList($event)"></app-todo-form>
+<app-todo-list [todoList]="todoList" *ngIf="todoList.length > 0"></app-todo-list>
+<router-outlet></router-outlet>

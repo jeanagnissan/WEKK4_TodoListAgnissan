@@ -1,0 +1,14 @@
+<form>
+
+  <label>Title</label>
+  <app-todo-input [type]="'title'" (titleEvent)="getTitleValue($event)"></app-todo-input>
+  <!-- <input type="text" [name]="type" (change)="sendEventTotheParent($event)"> -->
+
+  <label>Description</label>
+  <app-todo-input [type]="'description'" (descriptionEvent)="getDescriptionValue($event)"></app-todo-input>
+  <!-- <input type="text" [name]="type" (change)="sendEventTotheParent($event)"> -->
+
+  <app-button [text]="'ajouter mon todo'" (buttonState)="getButtonState($event)"></app-button>
+  <!-- <button type="button" (click)="createNewTodo()"> {{text}}</button> -->
+  
+</form>
